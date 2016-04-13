@@ -1,13 +1,4 @@
 function video {
-  mkdir $1
-  cd $1
-  echo >> $1.jpg
-  echo >> $1.mp4
-  echo >> readme.txt
-  mkdir raws
-  cd raws
-  mkdir footage
-  mkdir Premier\ Project
-  mkdir thumbnail
-  cd ../../
+  mkdir -p $1/raws/footage $1/raws/thumbnail $1/raws/Premier\ Project
+  touch $1/$1.jpg $1/$1.mp4 $1/readme.txt
 }
