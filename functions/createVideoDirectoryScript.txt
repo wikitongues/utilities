@@ -1,0 +1,13 @@
+function video {
+  mkdir $1
+  cd $1
+  echo >> $1.jpg
+  echo >> $1.mp4
+  echo >> readme.txt
+  mkdir raws
+  cd raws
+  mkdir footage
+  mkdir Premier\ Project
+  mkdir thumbnail
+  cd ../../
+}
