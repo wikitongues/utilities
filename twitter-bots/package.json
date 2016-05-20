@@ -1,0 +1,30 @@
+{
+  "name": "wikitongues-bots",
+  "version": "0.0.0",
+  "description": "Playing with Twitter",
+  "main": "cron.js",
+  "scripts": {
+    "start": "node cron.js"
+  },
+  "dependencies": {
+    "cron": "^1.1.0",
+    "twit": "^2.2.4"
+  },
+  "engines": {
+    "node": "4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rvinluan/bot-tests"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "twitter"
+  ],
+  "author": "Daniel Bogre Udell",
+  "contributors": [
+    "Robert Vinluan <robert.vinluan@gmail.com> (http://robertvinluan.com)"
+  ],
+  "license": "MIT"
+}
