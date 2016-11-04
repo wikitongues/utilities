@@ -1,5 +1,7 @@
 # youtube-copy-annotations
 
+forked from [stefansundin/youtube-copy-annotations](https://github.com/stefansundin/youtube-copy-annotations)
+
 > Copy YouTube annotations like a pro!
 
 Go to [the website](https://stefansundin.github.io/youtube-copy-annotations/) to try the script right now. Instructions inside.
