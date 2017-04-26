@@ -1,6 +1,10 @@
-#version 2.1
+#version 2.2
 
-function video {
-  mkdir -p $1/raws/footage $1/raws/footage/clips $1/raws/footage/converted $1/raws/thumbnail $1/raws/Premier\ Project
+ function video () {
+  mkdir -p $1/raws/footage $1/raws/footage/clips $1/raws/footage/converted $1/raws/footage/audio $1/raws/thumbnail $1/raws/Premier\ Project
   printf "Video file directory\n Raws\n  Thumbnail\n  Premier Project\n  Footage\n    Clips\n    Converted" > $1/readme.txt
+  echo "$1 successfully created"
+  if [ "$2" == "-o" ]; then
+    open $1
+  fi
 }
