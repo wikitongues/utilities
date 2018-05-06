@@ -73,12 +73,23 @@ url = "https://dl.airtable.com/xQFgqYSHTNKVlbHq9DB4_Screen%20Shot%202017-06-01%2
 1. Make sure `frontCover.indd` has the right date and volume number.
 1. Prepare `TOC.indd`.
     1. Prepare [TOC spreadsheet](https://docs.google.com/spreadsheets/d/1UbkXvSixUYgl773DdmrKiZj-0EoLR5mkmSY5uonWTgE/edit#gid=0)
-    1. Prepare toc.txt
+    1. Prepare toc.csv
+
+    Language1|Language2|Language3|Language4|Language5|Language6|Language7|Language8|Language9|Language10|Language11|Language12|Speaker1|Speaker2|Speaker3|Speaker4|Speaker5|Speaker6|Speaker7|Speaker8|Speaker9|Speaker10|Speaker11|Speaker12|Continent1|Continent2|Continent3|Continent4|Continent5|Continent6|Continent7|Continent8|Continent9|Continent10|Continent11|Continent12|@File Path1|@File Path2|@File Path3|@File Path4|@File Path5|@File Path6|@File Path7|@File Path8|@File Path9|@File Path10|@File Path11|@File Path12
+    |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+
     1. Prepare `TOC.ai`.
     1. Update `TOC.indd` to reflect the correct data.
 1. Prepare `singles.indd`.
-    1. Prepare the merge document `data.csv`.
+    1. Prepare the merge document `data.csv` in the format below.
+
+    @File Path|Speaker|L1|L2|L3|L4|L5|L6|Description|Continent|D1|D2|D3|D4|D5|D6|G1|G2|G3|G4|G5|G6|Published|Quote|Quote2
+    |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+
     1. Perform a data merge on both `singleA.indd` and `singleB.indd`, selecting `data.csv` as your data source. Name outputs after the edition, `6_17_singleA.indd` for example.
+
+    > Note: If Indesign refuses to load the data file, it might have an encoding problem. A quick fix is opening it up in TextEdit and saving a version.
+
     1. Delete all pages with vertical thumbnails from `6_17_singleA.indd`, and all pages with horizontal thumbnails from `6_17_singleB.indd`.
     1. Join the two documents, placing pages in order. You can move pages between different files within InDesign. Save new file as `6_17_singles.indd`.
     1. From merged document, review all pages to make sure:
