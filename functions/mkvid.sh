@@ -38,5 +38,10 @@ directorator () {
   fi
 }
 
-video $@
+if git diff-index --quiet HEAD --; then
+  video $@
+else
+  echo "Something is out of date. Please pull new changes from Github."
+fi
+
 
