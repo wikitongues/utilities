@@ -1,6 +1,7 @@
 #!/bin/bash
-#version 3.0
+# Version 3.0 of the Wikitongues Oral History Template Instantiator
 
+# Method Runner
 video () {
   videos=()
   open=false
@@ -24,6 +25,7 @@ video () {
   fi
 }
 
+# Instantiate Oral History directory
 directorator () {
   if [ -d "$1" ]; then
     echo "A directory named '$1' already exists in this location."
@@ -34,10 +36,12 @@ directorator () {
     for j in clips converted audio captions; do
       mkdir -p "$1"/raws/footage/"$j"
     done
+    node /Users/Amicus/Documents/Work/Active/Wikitongues/Git/Airtable-API/single.js "$1"
     echo "Oral History Directory Successfully Created For '$1'"
   fi
 }
 
+# Check if repository has changed
 if git diff-index --quiet HEAD --; then
   video $@
 else
